@@ -1,0 +1,43 @@
+#transitions-01 {
+  .block {
+    background-color: aquamarine;
+    color: blue;
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+  }
+
+  .block:hover {
+    background-color: blue;
+    color: aquamarine;
+  }
+}
+
+#transitions-02 {
+  .block {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: aquamarine;
+    color: blue;
+    transition-property: transform;
+    transition-duration: 0.5s;
+  }
+
+  .block:hover {
+    transform: rotate(-90deg);
+  }
+}
+
+#transitions-03 {
+  .block {
+    width: 100px;
+    height: 5px;
+    background-color: aquamarine;
+    transition-property: height;
+    transition-duration: 0.5s;
+  }
+
+  .block:hover {
+    height: 20px;
+  }
+}
