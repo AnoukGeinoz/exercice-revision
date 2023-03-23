@@ -1,0 +1,68 @@
+#mediaqueries-01 {
+  p {
+    font-size: 30px;
+  }
+
+  .p-2 {
+    font-size: 20px;
+  }
+
+  .ornament {
+    position: relative;
+    background-color: orange;
+    width: 8px;
+    height: 50px;
+    top: 55px;
+    right: 15px;
+  }
+
+  @media (min-width: 800px) {
+    p {
+      font-size: 50px;
+    }
+
+    .p-2 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .ornament {
+    display: none;
+  }
+}
+
+#mediaqueries-02 {
+  .block {
+    height: 50px;
+    background-color: aquamarine;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 800px) {
+  #mediaqueries-02 {
+    display: flex;
+  }
+
+  .block {
+    flex-grow: 1;
+  }
+}
+
+#mediaqueries-03 {
+  display: flex;
+  justify-content: space-around;
+  @media (min-width: 800px) {
+    a {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    display: none;
+  }
+}
